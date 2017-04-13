@@ -1,28 +1,20 @@
 package cpgame.demo;
 
-import java.net.URI;
-
 import cpgame.demo.domain.ERequestType;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
-import io.netty.channel.Channel;
-import io.netty.channel.ChannelFuture;
-import io.netty.channel.ChannelInitializer;
-import io.netty.channel.ChannelOption;
-import io.netty.channel.ChannelPipeline;
-import io.netty.channel.EventLoopGroup;
+import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioSocketChannel;
 import io.netty.handler.codec.LengthFieldBasedFrameDecoder;
 import io.netty.handler.codec.LengthFieldPrepender;
-import io.netty.handler.codec.http.DefaultFullHttpRequest;
-import io.netty.handler.codec.http.HttpHeaders;
-import io.netty.handler.codec.http.HttpMethod;
-import io.netty.handler.codec.http.HttpRequestEncoder;
-import io.netty.handler.codec.http.HttpResponseDecoder;
-import io.netty.handler.codec.http.HttpVersion;
+import io.netty.handler.codec.http.*;
+
+import java.io.UnsupportedEncodingException;
+import java.net.URI;
+import java.net.URISyntaxException;
 
 /**
  * @project: nettygame
@@ -35,6 +27,16 @@ import io.netty.handler.codec.http.HttpVersion;
  * @version:
  */
 public class ClientTest {
+
+	private static ChannelFuture channelFuture;
+
+	public static void sendMsgTest(String text) throws URISyntaxException, UnsupportedEncodingException {
+
+
+
+	}
+
+
 	public void connect(String host, int port, final ERequestType requestType) throws Exception {
 		EventLoopGroup workerGroup = new NioEventLoopGroup();
 		String msg = "Are you ok?";
@@ -54,13 +56,14 @@ public class ClientTest {
 				});
 				b.option(ChannelOption.SO_KEEPALIVE, true);
 
-				ChannelFuture f = b.connect(host, port).sync();
+				channelFuture = b.connect(host, port).sync();
 				ByteBuf messageData = Unpooled.buffer();
 				messageData.writeInt(999);
 				messageData.writeInt(msg.length());
 				messageData.writeBytes(msg.getBytes());
-				f.channel().writeAndFlush(messageData).sync();
-				f.channel().closeFuture().sync();
+				channelFuture.channel().writeAndFlush(messageData).sync();
+				channelFuture.channel().closeFuture().sync();
+
 
 			} catch (Exception e) {
 				e.printStackTrace();
@@ -85,7 +88,7 @@ public class ClientTest {
 
 				}
 			});
-			ChannelFuture f = b.connect(host, port).sync();
+			channelFuture = b.connect(host, port).sync();
 			b.option(ChannelOption.TCP_NODELAY, true);
 			b.option(ChannelOption.CONNECT_TIMEOUT_MILLIS, 10000);
 
@@ -100,9 +103,9 @@ public class ClientTest {
 			request.headers().set(HttpHeaders.Names.CONNECTION, HttpHeaders.Values.KEEP_ALIVE);
 			request.headers().set(HttpHeaders.Names.CONTENT_LENGTH, request.content().readableBytes());
 			// 发送http请求
-			f.channel().write(request);
-			f.channel().flush();
-			f.channel().closeFuture().sync();
+			channelFuture.channel().write(request);
+			channelFuture.channel().flush();
+			channelFuture.channel().closeFuture().sync();
 		}
 
 		try {
@@ -115,5 +118,7 @@ public class ClientTest {
 	public static void main(String[] args) throws Exception {
 		ClientTest client = new ClientTest();
 		client.connect("127.0.0.1", 8080, ERequestType.HTTP);
+
+		client.sendMsgTest("11111111111111111111");
 	}
 }

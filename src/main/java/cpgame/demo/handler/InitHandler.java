@@ -20,7 +20,9 @@ public class InitHandler implements GameHandler {
 	protected Logger logger = LoggerFactory.getLogger(getClass());
 
 	public void execute(GameRequest request, GameResponse response) {
-		this.logger.error(request.readString());
-		response.write("I am ok!");
+		String readString = request.readString();
+
+		this.logger.error(readString);
+		response.write("你发送的是  "+readString);
 	}
 }

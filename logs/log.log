@@ -183,3 +183,123 @@ io.netty.util.IllegalReferenceCountException: refCnt: 0, decrement: 1
 
 [2015-08-27 14:31:52,255][ERROR, (InitHandler.java:23).execute] are you ok?
 [2015-08-27 14:32:16,807][ERROR, (InitHandler.java:23).execute] are you ok?
+[2017-04-12 17:15:59,629][INFO, (NettyServer.java:45).run] websocket_text server started at port 8080.
+[2017-04-12 17:16:17,584][ERROR, (InitHandler.java:23).execute] Are you ok?
+[2017-04-12 17:28:53,138][ERROR, (InitHandler.java:23).execute] Are you ok?
+[2017-04-12 17:29:59,851][ERROR, (InitHandler.java:23).execute] Are you ok?
+[2017-04-12 17:30:29,512][ERROR, (InitHandler.java:23).execute] Are you ok?
+[2017-04-12 17:31:32,685][ERROR, (InitHandler.java:23).execute] Are you ok?
+[2017-04-12 17:32:22,834][ERROR, (InitHandler.java:23).execute] Are you ok?
+[2017-04-12 17:46:41,724][ERROR, (InitHandler.java:23).execute] Are you ok?
+[2017-04-12 17:48:28,134][ERROR, (InitHandler.java:23).execute] Are you ok?
+[2017-04-12 17:50:56,289][ERROR, (InitHandler.java:23).execute] Are you ok?
+[2017-04-12 17:57:10,336][ERROR, (InitHandler.java:23).execute] Are you ok?
+[2017-04-12 18:39:38,372][ERROR, (InitHandler.java:23).execute] Are you ok?
+[2017-04-12 18:39:45,620][INFO, (NettyServer.java:45).run] websocket_text server started at port 8080.
+[2017-04-12 18:40:54,502][ERROR, (InitHandler.java:23).execute] Are you ok?
+[2017-04-12 18:41:40,906][ERROR, (InitHandler.java:23).execute] Are you ok?
+[2017-04-12 18:41:46,663][ERROR, (HandlerDispatcher.java:132).run] java.lang.NullPointerException
+	at cpgame.demo.domain.GameResponse.<init>(GameResponse.java:39)
+	at cpgame.demo.dispatcher.HandlerDispatcher$MessageWorker.handMessageQueue(HandlerDispatcher.java:140)
+	at cpgame.demo.dispatcher.HandlerDispatcher$MessageWorker.run(HandlerDispatcher.java:130)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+[2017-04-12 18:41:59,515][ERROR, (InitHandler.java:23).execute] Are you ok?
+[2017-04-12 18:41:59,846][ERROR, (HandlerDispatcher.java:132).run] java.lang.NullPointerException
+	at cpgame.demo.domain.GameResponse.<init>(GameResponse.java:39)
+	at cpgame.demo.dispatcher.HandlerDispatcher$MessageWorker.handMessageQueue(HandlerDispatcher.java:140)
+	at cpgame.demo.dispatcher.HandlerDispatcher$MessageWorker.run(HandlerDispatcher.java:130)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+[2017-04-12 18:42:18,837][ERROR, (InitHandler.java:23).execute] Are you ok?
+[2017-04-12 18:42:18,843][ERROR, (HandlerDispatcher.java:132).run] java.lang.NullPointerException
+	at cpgame.demo.domain.GameResponse.<init>(GameResponse.java:39)
+	at cpgame.demo.dispatcher.HandlerDispatcher$MessageWorker.handMessageQueue(HandlerDispatcher.java:140)
+	at cpgame.demo.dispatcher.HandlerDispatcher$MessageWorker.run(HandlerDispatcher.java:130)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+[2017-04-12 18:42:48,246][ERROR, (InitHandler.java:23).execute] Are you ok?
+[2017-04-12 18:42:48,306][ERROR, (HandlerDispatcher.java:132).run] java.lang.NullPointerException
+	at cpgame.demo.domain.GameResponse.<init>(GameResponse.java:39)
+	at cpgame.demo.dispatcher.HandlerDispatcher$MessageWorker.handMessageQueue(HandlerDispatcher.java:140)
+	at cpgame.demo.dispatcher.HandlerDispatcher$MessageWorker.run(HandlerDispatcher.java:130)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+[2017-04-12 19:08:11,263][INFO, (NettyServer.java:45).run] websocket_text server started at port 8080.
+[2017-04-12 19:08:29,950][ERROR, (InitHandler.java:23).execute] Are you ok?
+[2017-04-12 19:11:07,256][ERROR, (InitHandler.java:23).execute] Are you ok?
+[2017-04-12 19:11:45,049][ERROR, (InitHandler.java:23).execute] Are you ok?
+[2017-04-12 19:11:46,016][ERROR, (InitHandler.java:23).execute] hhhhhhhhhhhhhhhhhhhhhhhhhhhh
+[2017-04-13 09:04:52,794][ERROR, (InitHandler.java:23).execute] Are you ok?
+[2017-04-13 09:07:12,035][ERROR, (InitHandler.java:23).execute] Are you ok?
+[2017-04-13 09:08:44,754][ERROR, (InitHandler.java:23).execute] Are you ok?
+[2017-04-13 09:11:17,591][ERROR, (InitHandler.java:23).execute] hhhhhhhhhhhhhhhhhhhhhhhhhhhh
+[2017-04-13 09:11:51,701][ERROR, (InitHandler.java:23).execute] Are you ok?
+[2017-04-13 09:12:14,785][ERROR, (InitHandler.java:23).execute] hhhhhhhhhhhhhhhhhhhhhhhhhhhh
+[2017-04-13 09:13:42,887][INFO, (NettyServer.java:45).run] websocket_text server started at port 8080.
+[2017-04-13 09:14:01,873][ERROR, (InitHandler.java:23).execute] Are you ok?
+[2017-04-13 09:14:01,933][ERROR, (HandlerDispatcher.java:132).run] java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
+	at java.util.LinkedList.checkElementIndex(LinkedList.java:553)
+	at java.util.LinkedList.get(LinkedList.java:474)
+	at cpgame.demo.domain.Command.readString(Command.java:69)
+	at cpgame.demo.domain.GameRequest.readString(GameRequest.java:99)
+	at cpgame.demo.handler.InitHandler.execute(InitHandler.java:24)
+	at cpgame.demo.dispatcher.HandlerDispatcher$MessageWorker.handMessageQueue(HandlerDispatcher.java:144)
+	at cpgame.demo.dispatcher.HandlerDispatcher$MessageWorker.run(HandlerDispatcher.java:130)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+[2017-04-13 09:14:04,898][ERROR, (InitHandler.java:23).execute] hhhhhhhhhhhhhhhhhhhhhhhhhhhh
+[2017-04-13 09:14:04,898][ERROR, (HandlerDispatcher.java:132).run] java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
+	at java.util.LinkedList.checkElementIndex(LinkedList.java:553)
+	at java.util.LinkedList.get(LinkedList.java:474)
+	at cpgame.demo.domain.Command.readString(Command.java:69)
+	at cpgame.demo.domain.GameRequest.readString(GameRequest.java:99)
+	at cpgame.demo.handler.InitHandler.execute(InitHandler.java:24)
+	at cpgame.demo.dispatcher.HandlerDispatcher$MessageWorker.handMessageQueue(HandlerDispatcher.java:144)
+	at cpgame.demo.dispatcher.HandlerDispatcher$MessageWorker.run(HandlerDispatcher.java:130)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+[2017-04-13 09:15:00,112][INFO, (NettyServer.java:45).run] websocket_text server started at port 8080.
+[2017-04-13 09:15:14,519][ERROR, (InitHandler.java:23).execute] Are you ok?
+[2017-04-13 09:15:14,521][ERROR, (HandlerDispatcher.java:132).run] java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
+	at java.util.LinkedList.checkElementIndex(LinkedList.java:553)
+	at java.util.LinkedList.get(LinkedList.java:474)
+	at cpgame.demo.domain.Command.readString(Command.java:69)
+	at cpgame.demo.domain.GameRequest.readString(GameRequest.java:99)
+	at cpgame.demo.handler.InitHandler.execute(InitHandler.java:24)
+	at cpgame.demo.dispatcher.HandlerDispatcher$MessageWorker.handMessageQueue(HandlerDispatcher.java:144)
+	at cpgame.demo.dispatcher.HandlerDispatcher$MessageWorker.run(HandlerDispatcher.java:130)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+[2017-04-13 09:15:31,691][INFO, (NettyServer.java:45).run] websocket_text server started at port 8080.
+[2017-04-13 09:16:02,842][ERROR, (InitHandler.java:23).execute] Are you ok?
+[2017-04-13 09:16:12,905][ERROR, (HandlerDispatcher.java:132).run] java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
+	at java.util.LinkedList.checkElementIndex(LinkedList.java:553)
+	at java.util.LinkedList.get(LinkedList.java:474)
+	at cpgame.demo.domain.Command.readString(Command.java:69)
+	at cpgame.demo.domain.GameRequest.readString(GameRequest.java:99)
+	at cpgame.demo.handler.InitHandler.execute(InitHandler.java:24)
+	at cpgame.demo.dispatcher.HandlerDispatcher$MessageWorker.handMessageQueue(HandlerDispatcher.java:144)
+	at cpgame.demo.dispatcher.HandlerDispatcher$MessageWorker.run(HandlerDispatcher.java:130)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+[2017-04-13 09:17:01,356][INFO, (NettyServer.java:45).run] websocket_text server started at port 8080.
+[2017-04-13 09:17:12,268][INFO, (NettyServer.java:45).run] websocket_text server started at port 8080.
+[2017-04-13 09:17:33,257][ERROR, (InitHandler.java:25).execute] Are you ok?
+[2017-04-13 09:17:49,194][ERROR, (InitHandler.java:25).execute] hhhhhhhhhhhhhhhhhhhhhhhhhhhh
